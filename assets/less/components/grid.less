@@ -1,0 +1,99 @@
+/*-- Largura das colunas --*/
+@column-width: 60;
+
+/*-- Largura da margem entre as colunas --*/
+@gutter-width: 20;
+
+/*-- Número de colunas --*/
+@columns: 12;
+
+/*-- Largura do sistema de grids --*/
+@gridsystem-width: (@column-width*@columns) + (@gutter-width*@columns) * 1px;
+
+/*-- Largura total do projeto --*/
+@total-width: 100%;
+
+
+
+/*-- Row --*/
+.row(@columns:@columns) {
+	display: block;
+	width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width);
+	margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1);
+	.clearfix;
+}
+
+/*-- Coluna --*/
+.column(@x,@columns:@columns) {
+	display: inline;
+	float: left;
+	width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
+	margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+/*-- Empurra dando uma margin do tamanho de uma coluna --*/
+.push(@offset:1) {
+	margin-left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+/*-- Puxa dando uma margin negativa do tamanho de uma coluna --*/
+.pull(@offset:1) {
+	margin-right: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+/*-- Clear Fix --*/
+.clearfix() {
+	*zoom:1;
+	
+	&:before,
+	&:after {
+	    content:"";
+	    display:table;
+	}
+	&:after {
+	    clear:both;
+	}
+}
+
+/*-- Row --*/
+.row{
+	.row();
+}
+
+//Colunas do grid
+.col-1{
+	.column(1);
+}
+.col-2{
+	.column(2);
+}
+.col-3{
+	.column(3);
+}
+.col-4{
+	.column(4);
+}
+.col-5{
+	.column(5);
+}
+.col-6{
+	.column(6);
+}
+.col-7{
+	.column(7);
+}
+.col-8{
+	.column(8);
+}
+.col-9{
+	.column(9);
+}
+.col-10{
+	.column(10);
+}
+.col-11{
+	.column(11);
+}
+.col-12{
+	.column(12);
+}

@@ -1,0 +1,108 @@
+/*-- Header --*/
+.header{
+	background: #FFF;
+	margin-bottom: 60px;
+	height: 90px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0px 2px 37px -1px rgba(0,0,0,0.32);
+	opacity: 0.9;
+
+	h1.logo{
+		float: left;
+		margin-top: 25px;
+		margin-left:  35px; 
+	}
+
+	.menu-mobile {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		height: 100%;
+		display: none;
+
+		a {
+			cursor: pointer;
+			font-size: 28px;
+			overflow: hidden;
+			position: relative;
+			height: 30px;
+			display: block;
+		}
+
+		a:hover {
+			color: #ccc;
+
+			img {
+				position: relative;
+				top: -39px;
+			}
+		}
+	}
+	
+	.top-side-box.menuSlide {
+		display: none;
+	}
+
+	.top-side-box{
+		float: right;
+
+		ul.list-top{
+			display: table;
+			margin-right: 20px;
+
+			li{
+				float: left;				
+				text-align: center;
+				height: 90px;
+				line-height: 90px;
+
+				a {
+					font-family: 'robotolight';
+					display: block;
+					height: 90px;
+					text-decoration: none;
+					padding: 0 15px;
+					color: #a8a8bf;
+					font-size: 14px;
+					cursor: pointer;
+				}
+
+				a:hover {
+					color: #6faad6;
+				}
+
+			}
+
+			.bt-login {
+				line-height: 30px;
+				a {
+					border: solid 1px #bec1dd!important;
+					margin-top: 30px;
+					height: 30px;
+					background: transparent;
+					border-radius: 6px 6px;
+					border: 0;
+					transition: all 0.3s ease;
+				}
+
+				a:hover {
+					background: #bec1dd;
+					color: #fff;
+					background: #aeb1cf;
+				}
+			}
+
+			.msg-box {
+				position: relative;
+
+				.badge {
+					top: 20px;
+					right: 20px;
+				}
+			}
+		}
+	}
+}
