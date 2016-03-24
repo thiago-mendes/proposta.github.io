@@ -3,7 +3,7 @@
  * http://gruntjs.com/
  *
  * Copyright (c) 2014 Tyler Kellen, contributors
- * Licensed under the MIT license.
+ * Licensed under the MIT license. teste
  */
 
 'use strict';
