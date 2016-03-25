@@ -578,6 +578,9 @@ header#topo nav {
   bottom: 0;
   width: 100%;
 }
+header#topo nav ul {
+  position: relative;
+}
 header#topo nav ul li {
   display: inline-block;
 }
@@ -591,6 +594,18 @@ header#topo nav ul li a {
 }
 header#topo nav ul li a:hover {
   background: #70abd7;
+}
+header#topo nav ul .nome {
+  position: absolute;
+  left: 0;
+  color: #fff;
+  padding: 12px 20px;
+}
+header#topo nav ul .bt-imprimir {
+  float: right;
+}
+header#topo nav ul .bt-imprimir i {
+  font-size: 24px;
 }
 #perfil {
   background: #edeef0;

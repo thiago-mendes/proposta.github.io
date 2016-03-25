@@ -44,6 +44,7 @@ header#topo {
 		width: 100%;
 
 		ul {
+			position: relative;
 			li {
 				display: inline-block;
 				a {
@@ -57,6 +58,21 @@ header#topo {
 
 				a:hover {
 					background: #70abd7;
+				}
+			}
+
+			.nome {
+				position: absolute;
+				left: 0;
+				color: #fff;
+				padding: 12px 20px;
+			}
+
+			.bt-imprimir {
+				float: right;
+
+				i {
+					font-size: 24px;
 				}
 			}
 		}
