@@ -1,6 +1,6 @@
 /*-- Body --*/
 body {
-	font-family: 'robotoregular';
+	font-family: 'Ubuntu', sans-serif;
 	line-height: 1.3em;
 	width: 100%;
 	.clearfix;
@@ -14,8 +14,19 @@ body {
 
 //Titulos
 h1,h2,h3,h4 {
-	font-family: 'ubuntumedium';
 	font-weight: normal;
+}
+
+h2 {
+	font-size: 40px;
+	color: @cor-cinza;
+	margin-bottom: 40px;
+}
+
+h3 {
+	font-size: 22px;
+	color: @cor-cinza;
+	margin-bottom: 10px;
 }
 
 .section-tit {
@@ -32,16 +43,33 @@ h1,h2,h3,h4 {
 
 //Paragrafos
 p{
-	margin-bottom: 20px;
 	color: #8B8CAA;
+	margin-bottom: 10px;
 }
 
 //listas 
 ul{
 	list-style: none;
-	margin-bottom: 20px;
-
 	li{
 		line-height: 1.8em;
+		color: #8B8CAA;
+	}
+}
+
+// Lista de habilidades
+
+ul.ul-habilidades {
+	li {
+		color: #2372b6;
+		margin-bottom: 20px;
+		font-size: 20px;
+		ul {
+			li {
+				color: #8B8CAA;
+				padding: 2px 2px 2px 20px;
+				margin-bottom: 0px;
+				font-size: 16px;
+			}
+		}
 	}
 }

@@ -30,11 +30,18 @@
     <!-- /// Favicons ////////  -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <script src="assets/js/modernizr.js"></script>
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <header>
-        <h1>Thiago Mendes | Desenvolvedor Front-End</h1>
+    <header id="topo">
+        <p>
+            <span>
+                <img src="assets/images/perfil-01.jpg" alt="">
+            </span>
+        </p>
+        <h1>Thiago Mendes <span>Desenvolvedor Front-End</span></h1>
         <nav>
             <ul>
                 <li><a href="#" title="Quem sou">Perfil</a></li>
@@ -45,30 +52,30 @@
     </header>
     <section id="perfil">
         <div class="controle">
-            <h2>Quem sou</h2>
             <div class="col-6">
-                <h3>Dados pessoais</h3>
+                <h2>Quem sou</h2>
                 <p><strong>Idade:</strong> 25 anos</p>
                 <p><strong>Estado civil:</strong> Casado</p>
                 <p><strong>Reside em:</strong> São Paulo / SP</p>
                 <p><strong>Trabalho atual:</strong> StartUp Convenia</p>
-                <h3>Escolaridade</h3>
-                <div class="item-escolaridade">
-                    <h4>Ensino superior - Web Design</h4>
-                    <p><strong>Instituição:</strong> Faculdade Unisantana</p>
-                </div>
-                <div class="item-escolaridade">
-                    <h4>Técnico - Web Design</h4>
-                    <p><strong>Instituição:</strong> Centro Paula Souza - ETEC</p>
-                </div>
-                <div class="item-escolaridade">
-                    <h4>Profissionalizante - Web Design</h4>
-                    <p><strong>Instituição:</strong> SENAI</p>
+                <div class="dados-escolaridade">
+                    <div class="item-escolaridade">
+                        <h3>Ensino superior - Web Design</h3>
+                        <p><strong>Instituição:</strong> Faculdade Unisantana</p>
+                    </div>
+                    <div class="item-escolaridade">
+                        <h3>Técnico - Web Design</h3>
+                        <p><strong>Instituição:</strong> Centro Paula Souza - ETEC</p>
+                    </div>
+                    <div class="item-escolaridade">
+                        <h3>Profissionalizante - Web Design</h3>
+                        <p><strong>Instituição:</strong> SENAI</p>
+                    </div>
                 </div>
             </div>
             <div class="col-6">
                 <h2>Habilidades</h2>
-                <ul class="col-6">
+                <ul class="col-6 ul-habilidades">
                     <li>
                         XHTML, HTML5
                         <ul>
@@ -101,7 +108,7 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="col-6">
+                <ul class="col-6 ul-habilidades">
                     <li>Bootstrap</li>
                     <li>GIT</li>
                     <li>SVN</li>
@@ -133,7 +140,7 @@
         </div>
     </section>
     <section id="contato">
-        
+        <h2>Contato</h2>
     </section>
     <footer>
         <nav id="top-footer">
