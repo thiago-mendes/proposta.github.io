@@ -1162,7 +1162,10 @@ footer p {
   .no-mobile {
     display: none!important;
   }
-  header#topo nav ul li a {
+  header#topo nav ul.controle {
+    width: 100%;
+  }
+  header#topo nav ul.controle li a {
     padding: 12px 10px;
     font-size: 12px;
   }
