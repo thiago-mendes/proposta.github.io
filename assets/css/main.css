@@ -448,7 +448,7 @@ select {
   -moz-border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: 0.5s ease background;
+  transition: 0.3s ease all;
 }
 .btn-sm {
   font-size: 10px;
@@ -463,6 +463,14 @@ select {
 .btn-full {
   display: block;
   width: 100%;
+}
+.btn-branco {
+  background: #fff;
+  color: #2372b6;
+}
+.btn-branco:hover {
+  background: #FBC74A;
+  color: #fff;
 }
 /*-- Body --*/
 body {
@@ -603,7 +611,7 @@ header#topo nav ul li a:hover {
   background: #0f5f70;
   color: #fff;
   overflow: hidden;
-  padding: 80px 0;
+  padding: 80px 0 40px;
 }
 #portifolio h2 {
   color: #fff;
@@ -611,6 +619,7 @@ header#topo nav ul li a:hover {
 }
 #portifolio div {
   text-align: center;
+  margin-bottom: 100px;
 }
 #portifolio div p {
   color: #fff;
@@ -621,116 +630,57 @@ header#topo nav ul li a:hover {
   height: 70%;
   margin: 0 auto;
   overflow: hidden;
+  border: solid 5px #fff;
   border-radius: 50%;
 }
 #portifolio div p span img {
   width: 100%;
+  display: block;
+}
+#portifolio div p a {
+  margin: 0 auto;
+  width: 100px;
+}
+#contato {
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+#contato h2 {
+  color: #fff;
+  margin-bottom: 80px;
+}
+#contato div {
+  margin-bottom: 40px;
+}
+#contato i {
+  background: #fff;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  color: #2372b6;
+  font-size: 30px;
+  line-height: 70px;
+  margin-bottom: 20px;
 }
 .controle {
   width: 85%;
   margin: 0 auto;
   max-width: 1280px;
 }
-/**
-
- Menu footer
-
-**/
-#menu-footer {
-  background: #eceeff;
-  padding: 50px 0;
-}
-#menu-footer .row h4 {
-  text-transform: uppercase;
-  color: #79ABCC;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-#menu-footer .row ul li a {
-  text-decoration: none;
-  color: #79abcc;
-}
-#menu-footer .row ul li a:hover {
-  color: #8B8CAA;
-}
-#menu-footer .row .input-busca {
-  background: #fff;
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
-}
-#menu-footer .row .input-busca input {
-  border: 0;
-  outline: none;
-  padding: 15px;
-  width: 70%;
-  display: block;
-  margin-right: 80px;
-  color: #8B8CAA;
-}
-#menu-footer .row .input-busca ::-webkit-input-placeholder {
-  color: #BEC1DD;
-}
-#menu-footer .row .input-busca :-moz-placeholder {
-  color: #BEC1DD;
-}
-#menu-footer .row .input-busca ::-moz-placeholder {
-  color: #BEC1DD;
-}
-#menu-footer .row .input-busca :-ms-input-placeholder {
-  color: #BEC1DD;
-}
-#menu-footer .row .input-busca button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-  height: 48px;
-  width: 60px;
-  background: #bec1dd;
+footer {
+  background: #2d323d;
   color: #fff;
 }
-#menu-footer .row .input-busca button img {
-  position: relative;
-  top: 2px;
-}
-#menu-footer .row .input-busca button:hover {
-  background: #79abcc;
-}
-/**
-
- fim menu footer
-
-**/
-#direitos {
-  background: #bec1dd;
-  position: relative;
-  height: 50px;
-  overflow: hidden;
-}
-#direitos p {
+footer p {
   color: #fff;
-  text-align: center;
-  line-height: 50px;
+  padding: 10px;
+  margin-bottom: 0;
   font-size: 14px;
-}
-#direitos ul {
-  position: absolute;
-  right: 100px;
-  top: 0;
-}
-#direitos ul li {
-  float: left;
-}
-#direitos ul li a {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  width: 38px;
-  height: 50px;
-}
-#direitos ul li a:hover img {
-  opacity: 0.7;
+  text-align: center;
 }
 #login {
   background: #7881bf;
