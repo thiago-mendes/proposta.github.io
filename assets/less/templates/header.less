@@ -42,6 +42,7 @@ header#topo {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
+		height: 52px;
 
 		ul {
 			position: relative;
@@ -54,6 +55,7 @@ header#topo {
 					text-decoration: none;
 					text-transform: uppercase;
 					font-size: 14px;
+					cursor: pointer;
 				}
 
 				a:hover {
@@ -64,8 +66,11 @@ header#topo {
 			.nome {
 				position: absolute;
 				left: 0;
+				top: 0;
 				color: #fff;
-				padding: 12px 20px;
+				
+				display: none;
+	
 			}
 
 			.bt-imprimir {
@@ -77,5 +82,11 @@ header#topo {
 				}
 			}
 		}
+	}
+
+	nav.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
 	}
 }

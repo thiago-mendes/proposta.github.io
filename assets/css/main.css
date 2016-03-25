@@ -579,6 +579,7 @@ header#topo nav {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 52px;
 }
 header#topo nav ul {
   position: relative;
@@ -593,6 +594,7 @@ header#topo nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+  cursor: pointer;
 }
 header#topo nav ul li a:hover {
   background: #70abd7;
@@ -600,8 +602,9 @@ header#topo nav ul li a:hover {
 header#topo nav ul .nome {
   position: absolute;
   left: 0;
+  top: 0;
   color: #fff;
-  padding: 12px 20px;
+  display: none;
 }
 header#topo nav ul .bt-imprimir {
   position: absolute;
@@ -609,6 +612,11 @@ header#topo nav ul .bt-imprimir {
 }
 header#topo nav ul .bt-imprimir i {
   font-size: 22px;
+}
+header#topo nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 #perfil {
   background: #edeef0;
