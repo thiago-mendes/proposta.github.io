@@ -1164,6 +1164,7 @@ footer p {
   }
   header#topo nav ul li a {
     padding: 12px 10px;
+    font-size: 14px;
   }
   .controle {
     width: 92%;
