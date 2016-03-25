@@ -1,0 +1,101 @@
+body,
+html {
+  position: relative;
+  height: 100%;
+}
+.container,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+header#topo {
+  height: 120px;
+}
+header#topo h1 {
+  font-size: 18px;
+}
+header#topo p {
+  padding-top: 10px;
+}
+header#topo p span {
+  width: 100px;
+  height: 100px;
+}
+header#topo p span img {
+  width: 100px;
+}
+header#topo nav {
+  display: none;
+}
+#perfil {
+  padding-bottom: 0;
+}
+#perfil .dados-escolaridade {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: solid 1px #ccc;
+}
+#perfil .dados-escolaridade div.item-escolaridade {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+#portfolio {
+  display: none;
+}
+#contato {
+  padding: 0;
+}
+#contato h2 {
+  text-align: left;
+  display: none;
+}
+#contato i {
+  background: #fff;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  color: #2372b6;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+#contato .controle div {
+  width: 33%;
+  float: left;
+  margin: 0;
+}
+h2,
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 5px;
+}
+ul.ul-habilidades li {
+  color: #2372b6;
+  margin-bottom: 5px;
+  font-size: 12px;
+  float: left;
+  width: 30%;
+}
+ul.ul-habilidades li ul li {
+  float: none;
+  color: #8B8CAA;
+  padding: 2px 2px 2px 5px;
+  font-size: 12px;
+}
+footer {
+  display: none;
+}

@@ -625,24 +625,24 @@ header#topo nav ul .bt-imprimir i {
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
-#portifolio {
+#portfolio {
   background: #0f5f70;
   color: #fff;
   overflow: hidden;
   padding: 80px 0 40px;
 }
-#portifolio h2 {
+#portfolio h2 {
   color: #fff;
   margin-bottom: 60px;
 }
-#portifolio div {
+#portfolio div {
   text-align: center;
   margin-bottom: 100px;
 }
-#portifolio div p {
+#portfolio div p {
   color: #fff;
 }
-#portifolio div p span {
+#portfolio div p span {
   display: block;
   width: 70%;
   height: 70%;
@@ -653,11 +653,11 @@ header#topo nav ul .bt-imprimir i {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
-#portifolio div p span img {
+#portfolio div p span img {
   width: 100%;
   display: block;
 }
-#portifolio div p a {
+#portfolio div p a {
   margin: 0 auto;
   width: 100px;
 }

@@ -17,6 +17,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					"assets/css/main.css": ["assets/less/main.less"],
+					"assets/css/print.css": ["assets/less/templates/print.less"],
 				}
 			}
 		},
