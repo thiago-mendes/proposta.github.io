@@ -551,6 +551,8 @@ header#topo p {
 }
 header#topo p span {
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   display: block;
   height: 150px;
   margin: 0 auto;
@@ -602,10 +604,11 @@ header#topo nav ul .nome {
   padding: 12px 20px;
 }
 header#topo nav ul .bt-imprimir {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 header#topo nav ul .bt-imprimir i {
-  font-size: 24px;
+  font-size: 22px;
 }
 #perfil {
   background: #edeef0;
@@ -647,6 +650,8 @@ header#topo nav ul .bt-imprimir i {
   overflow: hidden;
   border: solid 5px #fff;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
 }
 #portifolio div p span img {
   width: 100%;
@@ -676,6 +681,8 @@ header#topo nav ul .bt-imprimir i {
   height: 70px;
   width: 70px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   color: #2372b6;
   font-size: 30px;
   line-height: 70px;
@@ -1124,7 +1131,7 @@ footer p {
 
 **/
 /*-- Media Queries -- */
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   body,
   html {
     position: relative;
@@ -1152,170 +1159,7 @@ footer p {
   .no-desktop {
     display: block;
   }
-  .sidebar {
-    max-height: auto;
-    margin-left: 0;
-    margin-right: 0;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    display: none;
-    z-index: 500;
-  }
-  .container {
-    margin-top: 60px;
-  }
-  .container .main {
-    padding-top: 0;
-  }
-  .footer {
-    width: 100%;
-    margin: 0;
-  }
-  .section-tit {
-    font-size: 30px;
-    line-height: 35px;
-  }
-  .header .menu-mobile {
-    display: block;
-  }
-  .header .top-side-box {
-    display: none;
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    background: #fff;
-  }
-  .header .top-side-box ul.list-top {
-    width: 100%;
-    margin: 0;
-    background: #fff;
-    opacity: 1;
-  }
-  .header .top-side-box ul.list-top li {
-    display: block;
-    width: 100%;
-    line-height: 50px;
-    height: 50px;
-  }
-  .header .top-side-box ul.list-top li a {
-    height: 50px;
-    border-bottom: solid 1px #eff0f4;
-  }
-  .header .top-side-box ul.list-top li a:hover {
-    background: #6faad6;
-    color: #fff;
-  }
-  .header .top-side-box ul.list-top .bt-login {
-    line-height: 50px;
-  }
-  .header .top-side-box ul.list-top .bt-login a {
-    margin-top: 0px;
-    height: 50px;
-    background: #bec1dd;
-    border-radius: 0;
-    color: #fff;
-  }
-  .header .top-side-box ul.list-top .bt-login a:hover {
-    color: #fff;
-    background: #aeb1cf;
-  }
-  #full-banner {
-    height: auto;
-    background: #fbc74a;
-  }
-  #full-banner .info {
-    float: none;
-    width: 95%;
-    margin: 0 auto;
-    padding: 50px 0;
-    max-width: 100%;
-    text-align: center;
-  }
-  #full-banner .info h2.section-tit {
-    text-align: center;
-  }
-  #full-banner .info p .bt-comece {
-    margin: 40px auto 0;
-  }
-  #principais-processos {
-    margin-bottom: 50px;
-  }
-  #funcionalidades {
-    padding-top: 0;
-    padding-bottom: 110px;
-  }
-  #funcionalidades .controle {
-    width: 80%;
-  }
-  #funcionalidades .print-left,
-  #funcionalidades .print-right {
-    width: 100%;
-  }
-  #funcionalidades .print-left .print,
-  #funcionalidades .print-right .print {
-    width: 100%;
-  }
-  #funcionalidades .print-left .info,
-  #funcionalidades .print-right .info {
-    text-align: center;
-  }
-  #funcionalidades .row {
-    margin-bottom: 50px;
-  }
-  #funcionalidades .row .info {
-    margin-top: 10px;
-  }
-  #funcionalidades .row .info h2 {
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  #software .descricao {
-    padding: 0 30px;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  #software .row {
-    text-align: center;
-  }
-  #software .row h2 {
-    font-size: 22px;
-  }
-  #software .row h2 span {
-    display: block;
-    width: 100%;
-  }
-  #software .row h2 span img {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 20px;
-    position: relative;
-    top: 0px;
-  }
-  #software .row p {
-    padding: 20px 0 0 0;
-    color: #fff;
-  }
-  #trial form {
-    width: 70%;
-  }
-  #trial form fieldset .row {
-    margin-bottom: 0;
-  }
-  #trial form fieldset input {
-    width: 92.6%;
-  }
-  #direitos {
-    height: 100px;
-  }
-  #direitos ul {
-    position: relative;
-    right: 0;
-    top: -30px;
-    text-align: center;
-    width: 115px;
-    margin: 0 auto;
+  .no-mobile {
+    display: none!important;
   }
 }

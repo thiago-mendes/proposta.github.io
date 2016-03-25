@@ -10,7 +10,7 @@ header#topo {
 	p {
 		padding-top: 30px;
 		span {
-			border-radius: 50%;
+			.rounded-corners(50%);
 			display: block;
 			height: 150px;
 			margin: 0 auto;
@@ -69,10 +69,11 @@ header#topo {
 			}
 
 			.bt-imprimir {
-				float: right;
+				position: absolute;
+				right: 0;
 
 				i {
-					font-size: 24px;
+					font-size: 22px;
 				}
 			}
 		}
