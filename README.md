@@ -9,11 +9,12 @@ Uma página simples para desenvolvedores exibirem seu portfólio e CV.
 - Grunt
 - LESS
 
-- assets
--- css
--- fonts
--- images
--- js
--- less
+## Estrutura báscia de pasta
 
-- index.html
+1. assets
+  1. css
+  2. fonts
+  3. images
+  4. js
+  5. less
+2. index.html
