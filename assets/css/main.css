@@ -422,7 +422,7 @@ select {
 .badge {
   background: #fc6d6f;
   border-radius: 50%;
-  color: #FFF;
+  color: #fff;
   font-size: 10px;
   font-weight: 500;
   height: 20px;
@@ -435,7 +435,7 @@ select {
   z-index: 100;
 }
 .btn {
-  color: #FFF;
+  color: #fff;
   background: #CCC;
   display: table;
   font-size: 12px;
@@ -727,7 +727,6 @@ header#topo nav.fixed {
 }
 footer {
   background: #2d323d;
-  color: #fff;
 }
 footer p {
   color: #fff;
