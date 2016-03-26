@@ -96,6 +96,7 @@ ul.ul-habilidades li ul li {
   padding: 2px 2px 2px 5px;
   font-size: 12px;
 }
-footer {
+footer,
+#github {
   display: none;
 }

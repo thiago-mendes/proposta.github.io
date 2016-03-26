@@ -20,3 +20,18 @@ $("nav li a").click(function() {
     });
 
 });
+
+var user = "thiago-mendes";
+var getUrl = "https://api.github.com/search/repositories?q=%20+fork:true+user:" + user;
+
+$.ajax({
+    method: 'GET',
+    url: getUrl,
+    success: function(data) {
+        var resultado = data.items;
+        for (i in data.items) {
+            $("#resultado").append("<div class='col-3'> <p> <a href='"+ data.items[i].html_url +"' target='_blank'>" + data.items[i].name + "</a></p></div>");
+        }
+    }
+});
+
