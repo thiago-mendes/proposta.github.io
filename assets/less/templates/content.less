@@ -1,117 +1,141 @@
 #perfil {
-    background: #edeef0;
-    overflow: hidden;
-    padding: 80px 0;
-    strong {
-        color: @cor-azul;
+  background: #edeef0;
+  overflow: hidden;
+  padding: 80px 0;
+
+  .info {
+    padding-right: 80px;
+  }
+  strong {
+    color: @cor-azul;
+  }
+  .dados-escolaridade {
+    margin-top: 40px;
+    div.item-escolaridade {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
     }
-    .dados-escolaridade {
-        margin-top: 40px;
-        div.item-escolaridade {
-            padding-bottom: 15px;
-            margin-bottom: 15px;
-        }
-    }
+  }
 }
 
 #portfolio {
-    background: @cor-azul-2;
+  background: @cor-azul-2;
+  color: @cor-branco;
+  overflow: hidden;
+  padding: 80px 0 40px;
+  display: none;
+  h2 {
     color: @cor-branco;
-    overflow: hidden;
-    padding: 80px 0 40px;
-    h2 {
-        color: @cor-branco;
-        margin-bottom: 60px;
-    }
-    div {
-        text-align: center;
-        margin-bottom: 100px;
-        p {
-            color: @cor-branco;
-            span {
-                display: block;
-                width: 70%;
-                height: 70%;
-                margin: 0 auto;
-                overflow: hidden;
-                border: solid 5px @cor-branco;
-                .rounded-corners(50%);
-                img {
-                    width: 100%;
-                    display: block;
-                }
-            }
-            a {
-                margin: 0 auto;
-                width: 100px;
-            }
+    margin-bottom: 60px;
+  }
+  div {
+    text-align: center;
+    margin-bottom: 100px;
+    p {
+      color: @cor-branco;
+      span {
+        display: block;
+        width: 70%;
+        height: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+        border: solid 5px @cor-branco;
+        .rounded-corners(50%);
+        img {
+          width: 100%;
+          display: block;
         }
+      }
+      a {
+        margin: 0 auto;
+        width: 100px;
+      }
     }
+  }
 }
 
 #github {
-    background: #166e7f;
-    color: @cor-branco;
+  background: #166e7f;
+  color: @cor-branco;
+  overflow: hidden;
+  padding: 80px 0 100px;
+  display: none;
+
+  #resultado {
     overflow: hidden;
-    padding: 80px 0 100px;
+    margin-top: 80px;
 
-    #resultado {
-        overflow: hidden;
-        margin-top: 80px;
-
-        div {
-            p {
-                a {
-                    color: @cor-branco;
-                    background: @cor-azul-2;
-                    padding: 10px;
-                    display: block;
-                    text-decoration: none;
-                    border-top: solid 2px @cor-branco;
-                    transition: all 0.3s ease;
-                }
-
-                a:hover {
-                    background: @cor-branco;
-                    color: @cor-azul-2;
-                    border-top-color: @cor-preto;
-                }
-            }
+    div {
+      p {
+        a {
+          color: @cor-branco;
+          background: @cor-azul-2;
+          padding: 10px;
+          display: block;
+          text-decoration: none;
+          border-top: solid 2px @cor-branco;
+          transition: all 0.3s ease;
         }
+
+        a:hover {
+          background: @cor-branco;
+          color: @cor-azul-2;
+          border-top-color: @cor-preto;
+        }
+      }
     }
+  }
 }
 
 #contato {
-    background: @cor-preto;
+  background: @cor-preto;
+  color: @cor-branco;
+  overflow: hidden;
+  padding: 80px 0 40px;
+  text-align: center;
+
+  h2 {
     color: @cor-branco;
-    overflow: hidden;
-    padding: 80px 0 40px;
-    text-align: center;
+    margin-bottom: 80px;
+  }
 
-    h2 {
-    	color: @cor-branco;
-    	margin-bottom: 80px;
-    }
-	
-	div {
-		margin-bottom: 40px;
-	}
+  div {
+    margin-bottom: 40px;
+  }
 
-    i {
-        background: @cor-branco;
-        display: inline-block;
-        height: 70px;
-        width: 70px;
-        .rounded-corners(50%);
-        color: @cor-azul;
-        font-size: 30px;
-        line-height: 70px;
-        margin-bottom: 20px;
+  i {
+    background: @cor-branco;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    .rounded-corners(50%);
+    color: @cor-azul;
+    font-size: 30px;
+    line-height: 70px;
+    margin-bottom: 20px;
+  }
+}
+
+#passei {
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 14px;
+    a {
+      color: @cor-azul;
+      text-decoration: none;
     }
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
 
 .controle {
-    width: 85%;
-    margin: 0 auto;
-    max-width: 1280px;
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1280px;
 }

@@ -182,7 +182,7 @@ select {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -192,7 +192,7 @@ select {
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Uncomment for 3D effect */
@@ -474,7 +474,7 @@ select {
 }
 /*-- Body --*/
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.3em;
   width: 100%;
   *zoom: 1;
@@ -500,11 +500,14 @@ h2 {
   font-size: 40px;
   color: #b7b7b7;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 h3 {
   font-size: 22px;
   color: #b7b7b7;
   margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
 }
 .section-tit {
   text-align: center;
@@ -623,6 +626,9 @@ header#topo nav.fixed {
   overflow: hidden;
   padding: 80px 0;
 }
+#perfil .info {
+  padding-right: 80px;
+}
 #perfil strong {
   color: #2372b6;
 }
@@ -638,6 +644,7 @@ header#topo nav.fixed {
   color: #fff;
   overflow: hidden;
   padding: 80px 0 40px;
+  display: none;
 }
 #portfolio h2 {
   color: #fff;
@@ -674,6 +681,7 @@ header#topo nav.fixed {
   color: #fff;
   overflow: hidden;
   padding: 80px 0 100px;
+  display: none;
 }
 #github #resultado {
   overflow: hidden;
@@ -719,6 +727,19 @@ header#topo nav.fixed {
   font-size: 30px;
   line-height: 70px;
   margin-bottom: 20px;
+}
+#passei h2 {
+  margin-bottom: 50px;
+}
+#passei h3 {
+  font-size: 14px;
+}
+#passei h3 a {
+  color: #2372b6;
+  text-decoration: none;
+}
+#passei p {
+  font-size: 14px;
 }
 .controle {
   width: 85%;

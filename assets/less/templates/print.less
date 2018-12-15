@@ -1,7 +1,14 @@
 body,
 html {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
+}
+p {
+  font-size: 14px;
+  line-height: 18px;
+}
+h2 {
+  margin-bottom: 10px;
 }
 
 //// Layout Geral
@@ -18,101 +25,132 @@ html {
 .col-10,
 .col-11,
 .col-12 {
-    margin-bottom: 20px;
-    width: 100%;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 header#topo {
-    height: 120px;
-    h1 {
-        font-size: 18px;
+  height: 50px;
+  text-align: center;
+  h1 {
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    top: -20px;
+  }
+  p {
+    padding-top: 10px;
+    display: inline-block;
+    margin-right: 15px;
+    span {
+      width: 70px;
+      height: 70px;
+
+      img {
+        width: 70px;
+      }
     }
-    p {
-        padding-top: 10px;
-        span {
-            width: 100px;
-            height: 100px;
-            img {
-                width: 100px;
-            }
-        }
-    }
-    nav {
-        display: none;
-    }
+  }
+  nav {
+    display: none;
+  }
 }
 
 #perfil {
-    padding-bottom: 0;
-    .dados-escolaridade {
-        margin-top: 20px;
-        padding-top: 10px;
-        border-top: solid 1px #ccc;
-        div.item-escolaridade {
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
+  padding-bottom: 0;
+  .dados-escolaridade {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: solid 1px #ccc;
+    div.item-escolaridade {
+      padding-bottom: 5px;
+      margin-bottom: 0px;
     }
+
+    h3 {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 #portfolio {
-    display: none;
+  display: none;
 }
 
 #contato {
-    padding: 0;
-    h2 {
-        text-align: left;
-        display: none;
+  padding: 20px 0 0 0;
+  h2 {
+    text-align: left;
+    display: none;
+  }
+  i {
+    background: #fff;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    color: #2372b6;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+  .controle {
+    div {
+      width: 33%;
+      float: left;
+      margin: 0;
     }
-    i {
-        background: #fff;
-        display: inline-block;
-        height: 20px;
-        width: 20px;
-        color: #2372b6;
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 0px;
-    }
-    .controle {
-        div {
-            width: 33%;
-            float: left;
-            margin: 0;
-        }
-    }
+  }
 }
 
 h2,
 h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 7px;
 }
 
 p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 ul.ul-habilidades {
-    li {
-        color: #2372b6;
-        margin-bottom: 5px;
+  margin-bottom: 10px;
+  li {
+    color: #2372b6;
+    margin-bottom: 0px;
+    font-size: 12px;
+    float: left;
+    width: 30%;
+    ul {
+      li {
+        float: none;
+        color: #8b8caa;
+        padding: 0;
         font-size: 12px;
-        float: left;
-        width: 30%;
-        ul {
-            li {
-                float: none;
-                color: #8B8CAA;
-                padding: 2px 2px 2px 5px;
-                font-size: 12px;
-            }
-        }
+      }
     }
+  }
 }
 
-footer,#github {
-    display: none;
+#passei {
+  margin-bottom: 20px;
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .col-3 {
+    width: 50%;
+    float: left;
+    margin-bottom: 3px;
+  }
+}
+
+footer,
+#github {
+  display: none;
 }
